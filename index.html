@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script rel="javascript" type="text/javascript" src="assets/script.js"></script>
+        <div class="row">
+            <div id="titleBanner" class="col-md-12">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <input
+                            id="cityInput"
+                            class="form-control mr-sm-2"
+                            type="search"
+                            placeholder="Search By City"
+                            aria-label="Search"
+                        />
+                        <button id="searchBtn" class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </nav>
+                <div id="cityList">
+                    <ul class ="list-group">
+                        <li class="list-group-item"><p class="card-body"></p></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="currentWeather" class="card bg-light mb-9" style="max-width: 80rem;" class="col-md-9">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-8">
+                <h1 style="border: solid black 3px; text-align: center; background-color: rgba(30, 82, 131, 0.568); color: white;">5-Day Forecast</h1>
+                <div class="card-deck">
+                    <div id="oneDayForecast" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-body"></div>
+                    </div>
+                    <div id="twoDayForecast" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-body"></div>
+                    </div>
+                    <div id="threeDayForecast" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-body"></div>
+                    </div>
+                    <div id="fourDayForecast" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-body"></div>
+                    </div>
+                    <div id="fiveDayForecast" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
